@@ -4,12 +4,10 @@ public class App {
 		System.out.println("Números primos entre 2 y 100: ");
 		for (int i = 2; i <= 100; i++) {
 			boolean esPrimo = true;
-			int j = 2;
-			while (j < i && esPrimo)
+			for (int j = 2; j < i && esPrimo; j++)
 			{
 				if (i % j == 0 && i != 2)
 					esPrimo = false;
-				j++;
 			}
 			System.out.print(esPrimo ? i + " " : "");
 		}
