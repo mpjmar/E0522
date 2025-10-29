@@ -11,8 +11,7 @@ public class App {
 					esPrimo = false;
 				j++;
 			}
-			if (esPrimo)
-				System.out.print(i + " ");
+			System.out.print(esPrimo ? i + " " : "");
 		}
     }
 }
